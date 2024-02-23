@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>El club Viejuner</title>
+    <h2>El club del Viejuner</h2>
+</head>
+<body>
+    <h4>tú:</h4>
+    <form>
+        <fieldset>
+           <!-- ¿ul? -->
+           <label for="name">Nombre:</label><br>
+           <input type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" tabindex="3"><br>
+           <label for="apellido">Apellido:</label><br>
+           <input type="text" placeholder="Ingresa tu apellido" name="apellido" id="apellido" tabindex="2" required><br>
+           <label for="age">Edad:</label><br>
+           <input type="number" placeholder="Ingresa tu edad" maxlength="1" name="edad" id="edad" tabindex="1"><br>
+           <p>Sexo:</p>
+           <label for="gender">Masculino</label>
+           <input type="radio" name="gender" id="male" value="masculino">
+           <label for="gender">Femenino</label>
+           <input type="radio" name="gender" id="female" value="femenino">
+           <label for="gender">Otro</label>
+           <input type="radio" name="gender" id="other" value="otro"><br>
+           <label for="viejuner">Me siento Viejuner</label>
+           <input type="checkbox" name="viejuner" id="viejuner"><br>
+           <label for="escribe">Escribe algo sobre ti</label>
+           <textarea id="escribe" name="escribe" rows="10" cols="30"></textarea><br>
+        </fieldset>
+    <h4>Tus circunstancias:</h4>
+        <fieldset>
+           <label for="email">Correo electrónico:</label>
+           <input type="email" placeholder="ejemplo@ejemplo.com" name="email" id="email"><br>
+           <label for="teléfono">Teléfono:</label>
+           <input type="tel" id="teléfono" name="teléfono" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}">             
+        </fieldset> 
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restaurar">
+    </form>
+</body>

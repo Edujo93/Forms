@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los ladronzuelos de bicicletas</title>
+    <h4>Ladronzuelos de bicicletas</h4>
+</head>
+<body>
+    <form action="/backend">
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" name="fecha"><br>
+      <label for="time">Hora:</label>
+      <input type="time" id="time" name="time"><br>
+      <label for="color">Color de la bicicleta:</label>
+      <input type="color" id="time" name="color"><br>
+      <label for="range">Rango de precio:</label>
+      <input type="range" id="range" name="rango" min="0" max="100"><br>
+      <label for="accesories">Accesorios:</label>
+      <select name="accesories" id="accesories">
+        <option value="">Elige una opción</option>
+        <option value="pegatinas">Pegatinas</option>
+        <option value="cestita">Cestita</option>
+        <option value="pump">Bomba de aire</option>
+        <option value="bell">Timbre</option>
+        <option value="spotlight">Foco</option>
+      </select><br>
+
+
+      <label for="brand">¿Qué marca era?</label>
+      <select name="brand" id="brand" required>
+        <option value="">Elige una opción</option>
+        <option value="trek">Trek</option>
+        <option value="ghost">Ghost</option>
+        <option value="argon">Argon</option>    
+        <option value="factor">Factor</option>  
+        <option value="look">Look</option>
+      </select>
+      <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
